@@ -1,0 +1,24 @@
+{
+  "name": "commitlint-config",
+  "version": "0.0.0",
+  "description": "Git 规范",
+  "keywords": [
+    "commit",
+    "lint"
+  ],
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/commitlint-config.test.js"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionnalcommits": "^4.5.0"
+  }
+}
