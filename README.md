@@ -1,6 +1,6 @@
 # fe-demo
 
-<!-- ## .1markdownlint.json 应用packages中markdownlint-config配置 -->
+<!-- ## .markdownlint.json 应用packages中markdownlint-config配置 -->
 
 <!-- ## .markdownlint.json 应用packages中markdownlint-config配置 -->
 
