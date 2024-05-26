@@ -2,7 +2,7 @@
 
 > TODO: description
 
-## Usage
+## Usage 测试
 
 ```
 const commitlintConfig = require('commitlint-config');
