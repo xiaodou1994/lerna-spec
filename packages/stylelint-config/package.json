@@ -1,0 +1,34 @@
+{
+  "name": "stylelint-config",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "homepage": "https://github.com/xiaodou1994/lerna-spec#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "keywords": [
+    "style",
+    "lint"
+  ],
+  "peerDependencies": {
+    "stylelint": ">=8.3.0",
+    "stylelint-scss": ">=2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaodou1994/lerna-spec.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/stylelint-config.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaodou1994/lerna-spec/issues"
+  }
+}
