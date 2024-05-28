@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config",
+  "name": "spec-eslint-config",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "JavaScript TypeScript 规范",
   "author": "xiaodou1994",
   "homepage": "https://github.com/xiaodou1994/lerna-spec#readme",
   "license": "ISC",
