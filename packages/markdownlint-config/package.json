@@ -1,6 +1,7 @@
 {
-  "name": "learn-markdownlint-config",
+  "name": "spec-markdownlint-config",
   "version": "0.0.0",
+  "main": "index.json",
   "description": "文档规范",
   "keywords": [
     "markdown",
@@ -8,9 +9,12 @@
   ],
   "homepage": "",
   "license": "ISC",
-  "main": "index.json",
   "publishConfig": {
     "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaodou1994/lerna-spec.git"
   },
   "peerDependencies": {
     "markdownlint": "^0.28.1"

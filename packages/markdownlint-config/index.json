@@ -1,17 +1,16 @@
 {
-  "$schema": "https://raw.githubusercontent.com/markdownlint/main/schema/markdownlint-config-schema.json",
   "default": true,
-  "ul-style": "dash",
-  "no-trailing-spaces": {
-    "br_spaces": 0
+  "ul-style": {
+    "style": "dash"
   },
-  "list-marker-space": false,
+  "no-trailing-spaces": {
+    "br_spaces": 0,
+    "list_item_empty_lines": false
+  },
   "line-length": false,
   "no-inline-html": false,
-  "no-duplicate-header": false,
   "proper-names": {
     "names": [
-      "Javascript",
       "HTML"
     ],
     "code_blocks": false

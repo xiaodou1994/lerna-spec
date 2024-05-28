@@ -8,7 +8,7 @@ export default defineConfig4CustomTheme({
 			description: '前端编码规范工程化',
 		},
 	},
-	base: '/fe-spec/',
+	base: '/lerna-spec/',
 	themeConfig: {
 		nav: [
 			{ text: '首页', link: '/index.md' },
@@ -76,13 +76,13 @@ export default defineConfig4CustomTheme({
 			},
 		],
 		// logo: '/img/logo.png',
-		repo: 'xiaodou1994/fe-spec',
+		repo: 'xiaodou1994/lerna-spec',
 		searchMaxSuggestions: 10,
 		docsDir: 'docs',
 		footer: {
 			createYear: 2023,
 			copyrightInfo:
-				'<a href="https://github.com/xiaodou1994/fe-spec" target="_blank">github</a>',
+				'<a href="https://github.com/xiaodou1994/lerna-spec" target="_blank">github</a>',
 		},
 
 		extendFrontmatter: {

@@ -1,6 +1,7 @@
 {
-  "name": "commitlint-config",
+  "name": "spec-commitlint-config",
   "version": "0.0.0",
+  "main": "index.js",
   "description": "Git 规范",
   "keywords": [
     "commit",
@@ -8,15 +9,15 @@
   ],
   "homepage": "",
   "license": "ISC",
-  "main": "index.js",
   "files": [
     "lib"
   ],
   "publishConfig": {
     "registry": "https://registry.npmmirror.com/"
   },
-  "scripts": {
-    "test": "node ./__tests__/commitlint-config.test.js"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaodou1994/lerna-spec.git"
   },
   "dependencies": {
     "conventional-changelog-conventionnalcommits": "^4.5.0"

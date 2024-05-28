@@ -6,7 +6,7 @@ tags:
     - 工程规范
 author:
     name: xiaodou1994
-    link: https://github.com/xiaodou1994/fe-spec
+    link: https://github.com/xiaodou1994/lerna-spec
 ---
 
 # 文档 规范

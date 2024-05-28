@@ -1,10 +1,10 @@
 {
-  "name": "stylelint-config",
+  "name": "spec-stylelint-config",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "CSS规范",
+  "main": "index.js",
   "homepage": "https://github.com/xiaodou1994/lerna-spec#readme",
   "license": "ISC",
-  "main": "index.js",
   "keywords": [
     "style",
     "lint"
@@ -26,7 +26,7 @@
     "url": "git+https://github.com/xiaodou1994/lerna-spec.git"
   },
   "scripts": {
-    "test": "node ./__tests__/stylelint-config.test.js"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/xiaodou1994/lerna-spec/issues"

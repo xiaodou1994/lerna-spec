@@ -1,0 +1,36 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "熊珍珍 <1084509216@qq.com>",
+  "homepage": "https://github.com/xiaodou1994/lerna-spec#readme",
+  "license": "ISC",
+  "main": "lib/eslint-config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaodou1994/lerna-spec.git"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "node ./__tests__/eslint-config.test.js",
+    "print-config": "eslint --print-config ./index.js > ./print-config.json"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "eslint-plugin-import": "^2.25.3"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaodou1994/lerna-spec/issues"
+  }
+}
