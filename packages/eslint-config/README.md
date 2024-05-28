@@ -39,7 +39,6 @@ npm i -D spec-eslint-config @babel/core @babel/eslint-parser eslint-plugin-impor
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.25.3
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/)@^4.2.0
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选）
 
 ### 安装
 
@@ -52,18 +51,6 @@ npm i -D spec-eslint-config @babel/core @babel/eslint-parser eslint-plugin-impor
 ```json
 {
   "extends": ["spec-eslint-config/react"]
-}
-```
-
-如果需要无障碍能力：
-
-```shell
-npm i -D eslint-plugin-jsx-a11y
-```
-
-```json
-{
-  "extends": ["spec-eslint-config/react", "spec-eslint-config/jsx-a11y"]
 }
 ```
 
@@ -93,7 +80,7 @@ npm i -D spec-eslint-config @babel/core @babel/eslint-parser eslint-plugin-impor
 }
 ```
 
-## JavaScript (Node.js) 项目 - spec-eslint-config/node
+<!-- ## JavaScript (Node.js) 项目 - spec-eslint-config/node
 
 针对 Node.js 项目，继承了默认配置和 [eslint-config-egg 的规则](https://github.com/eggjs/eslint-config-egg/blob/master/lib/rules/node.js)，规则由 ESLint 原生规则和 [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) 提供。
 
@@ -116,7 +103,7 @@ npm i -D spec-eslint-config @babel/core @babel/eslint-parser eslint-plugin-impor
 {
   "extends": ["spec-eslint-config/node"]
 }
-```
+``` -->
 
 ## TypeScript 项目 - spec-eslint-config/typescript
 
@@ -166,7 +153,6 @@ npm i -D spec-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-
 - [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript)@2
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.2.0
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选）
 
 ### 安装
 
@@ -182,17 +168,6 @@ npm i -D spec-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-
 }
 ```
 
-如果需要无障碍能力：
-
-```shell
-npm i -D  eslint-plugin-jsx-a11y
-```
-
-```json
-{
-  "extends": ["spec-eslint-config/typescript/react", "spec-eslint-config/jsx-a11y"]
-}
-```
 
 ## TypeScript + Vue 项目 - spec-eslint-config/typescript/vue
 
@@ -221,7 +196,7 @@ npm i -D spec-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-
 }
 ```
 
-## TypeScript (Node.js) 项目 - spec-eslint-config/typescript/node
+<!-- ## TypeScript (Node.js) 项目 - spec-eslint-config/typescript/node
 
 针对未使用 `React` 和 `Vue` 的 `TypeScript(Node)` 项目，继承了 `JS Node.js` 配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
@@ -245,7 +220,7 @@ npm i -D spec-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-
 {
   "extends": ["spec-eslint-config/typescript/node"]
 }
-```
+``` -->
 
 ## 配合 Prettier 使用
 

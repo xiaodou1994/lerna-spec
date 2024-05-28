@@ -1,8 +1,8 @@
 {
   "name": "eslint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
-  "author": "熊珍珍 <1084509216@qq.com>",
+  "author": "xiaodou1994",
   "homepage": "https://github.com/xiaodou1994/lerna-spec#readme",
   "license": "ISC",
   "main": "lib/eslint-config.js",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmmirror.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",

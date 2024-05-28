@@ -1,16 +1,17 @@
 {
   "name": "spec-markdownlint-config",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "main": "index.json",
   "description": "文档规范",
   "keywords": [
     "markdown",
     "lint"
   ],
+  "author": "xiaodou1994",
   "homepage": "",
   "license": "ISC",
   "publishConfig": {
-    "registry": "https://registry.npmmirror.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",

@@ -337,7 +337,7 @@ author:
 <html lang="zh-CN">
  <head>
   <meta charset="utf-8" />
-  <meta name="description" content="xiaodou1994 - 一千个职业梦想的赞助商" />
+  <meta name="description" content="xiaodou1994 - " />
   <meta name="keyword" content="xiaodou1994" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
   <title>xiaodou1994</title>

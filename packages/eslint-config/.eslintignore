@@ -1,0 +1,14 @@
+# 忽略目录
+node_modules/
+build/
+dist/
+zip/
+demo/
+vendor/
+lib/
+test/fixtures
+
+# 忽略文件
+**/*.min.js
+**/*-min.js
+**/*.bundle.js
