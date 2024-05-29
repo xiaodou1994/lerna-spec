@@ -80,7 +80,7 @@ npm i -D spec-eslint-config @babel/core @babel/eslint-parser eslint-plugin-impor
 }
 ```
 
-<!-- ## JavaScript (Node.js) 项目 - spec-eslint-config/node
+## JavaScript (Node.js) 项目 - spec-eslint-config/node
 
 针对 Node.js 项目，继承了默认配置和 [eslint-config-egg 的规则](https://github.com/eggjs/eslint-config-egg/blob/master/lib/rules/node.js)，规则由 ESLint 原生规则和 [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) 提供。
 
@@ -103,7 +103,7 @@ npm i -D spec-eslint-config @babel/core @babel/eslint-parser eslint-plugin-impor
 {
   "extends": ["spec-eslint-config/node"]
 }
-``` -->
+```
 
 ## TypeScript 项目 - spec-eslint-config/typescript
 
