@@ -26,14 +26,21 @@
     "test": "node ./__tests__/cli-config.test.js",
     "dev": "npm run copyfiles && tsc -w",
     "build": "rimraf lib && npm run copyfiles && tsc",
-    "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib"
+    "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
+    "lint": "eslint ./",
+    "clean": "rimraf node_modules",
+    "markdownlint": "markdownlint README.md"
   },
   "bugs": {
     "url": "https://github.com/xiaodou1994/lerna-spec/issues"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1",
+    "@babel/core": "^7.24.6",
+    "@babel/eslint-parser": "^7.24.6",
     "@types/node": "^14.14.11",
+    "copyfiles": "^2.4.1",
+    "eslint-config-egg": "^13.1.0",
+    "eslint-plugin-import": "^2.29.1",
     "typescript": "^4.6.2"
   },
   "dependencies": {
@@ -44,10 +51,25 @@
     "commander": "^6.2.1",
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.10",
+    "eslint": "^8.7.0",
+    "eslint-config-egg": "^10.0.0",
+    "eslint-config-encode": "^1.0.8",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-vue": "^7.3.0",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
     "inquirer": "^7.3.3",
     "lodash": "^4.17.21",
-    "ora": "^5.1.0"
+    "markdownlint": "^0.34.0",
+    "ora": "^5.1.0",
+    "spec-eslint-config": "^1.0.5",
+    "spec-markdownlint-config": "1.0.2",
+    "vue-eslint-parser": "^7.3.0"
   }
 }

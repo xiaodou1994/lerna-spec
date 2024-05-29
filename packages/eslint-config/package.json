@@ -1,32 +1,31 @@
 {
   "name": "spec-eslint-config",
-  "version": "1.0.3",
-  "description": "JavaScript TypeScript 规范",
-  "author": "xiaodou1994",
-  "homepage": "https://github.com/xiaodou1994/lerna-spec#readme",
-  "license": "ISC",
+  "version": "1.0.5",
   "main": "index.js",
+  "description": "JavaScript TypeScript Node 规范",
   "keywords": [
     "javaScript",
     "typescript",
     "node",
     "lint"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xiaodou1994/lerna-spec.git"
-  },
   "scripts": {
     "lint": "eslint ./",
     "test": "mocha ./__tests__/*.test.js --timeout 5000",
     "print-config": "eslint --print-config ./index.js > ./print-config.json"
   },
+  "author": "xiaodou1994",
+  "homepage": "https://github.com/xiaodou1994/lerna-spec#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaodou1994/lerna-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaodou1994/lerna-spec/issues"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
-	
     "@babel/eslint-parser": "^7.16.3",
     "@babel/preset-react": "^7.16.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -40,12 +39,9 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-vue": "^7.3.0",
-	"lodash": "^4.17.21",
+    "lodash": "^4.17.21",
     "mocha": "^8.2.1",
     "typescript": "^4.1.2",
     "vue-eslint-parser": "^7.3.0"
-  },
-  "bugs": {
-    "url": "https://github.com/xiaodou1994/lerna-spec/issues"
   }
 }
