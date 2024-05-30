@@ -1,6 +1,6 @@
 {
   "name": "spec-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "编码规范化标准脚手架",
   "keywords": [
     "lint",
@@ -53,7 +53,7 @@
     "ejs": "^3.1.10",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
-    "eslint-config-encode": "^1.0.8",
+    "eslint-config-lerna-spec": "^1.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.22.1",
@@ -62,14 +62,23 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-vue": "^7.3.0",
+    "fast-glob": "^3.2.11",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
     "inquirer": "^7.3.3",
+    "is-docker": "^2.1.1",
     "lodash": "^4.17.21",
-    "markdownlint": "^0.34.0",
+    "markdownlint": "^0.25.1",
+    "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
-    "spec-eslint-config": "^1.0.5",
+    "prettier": "^2.2.1",
     "spec-markdownlint-config": "1.0.2",
+    "spec-stylelint-config": "^1.0.0",
+    "strip-ansi": "^6.0.0",
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0",
+    "terminal-link": "^2.1.1",
+    "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
   }
 }

@@ -55,6 +55,6 @@ export default async (install = true) => {
       log.info(`当前没有可用的更新`);
     }
   } catch (e) {
-
+    // 
   }
 }

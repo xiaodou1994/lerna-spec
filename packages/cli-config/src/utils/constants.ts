@@ -64,10 +64,10 @@ export const PROJECT_TYPES: Array<{ name: string; value: string }> = [
     name: 'Node.js 项目（TypeScript）',
     value: 'typescript/node',
   },
-  // {
-  //   name: '使用 ES5 及之前版本 JavaScript 的老项目',
-  //   value: 'es5',
-  // },
+  {
+    name: '使用 ES5 及之前版本 JavaScript 的老项目',
+    value: 'es5',
+  },
 ];
 
 /**
@@ -80,12 +80,12 @@ export const ESLINT_FILE_EXT: string[] = ['.js', '.jsx', '.ts', '.tsx', '.vue'];
  * 需要同步到 config/.eslintignore.ejs
  */
 export const ESLINT_IGNORE_PATTERN: string[] = [
-  'node_modules/',
-  'build/',
-  'dist/',
-  'coverage/',
-  'es/',
-  'lib/',
+  'node_modules',
+  'build',
+  'dist',
+  'coverage',
+  'es',
+  'lib',
   '**/*.min.js',
   '**/*-min.js',
   '**/*.bundle.js',

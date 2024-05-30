@@ -64,13 +64,13 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
     Object.keys(pkg.dependencies || {}),
     Object.keys(pkg.devDependencies || []),
   );
-  const willRemovePackage = dependencies.filter(
+  const willRemovePackage: any[] = dependencies.filter(
     (name) =>
       packageNamesToRemove.includes(name) ||
       packagePrefixesToRemove.some((prefix) => name.startsWith(prefix)),
   );
-  const uselessConfig = checkUselessConfig(cwd);
-  const reWriteConfig = checkReWriteConfig(cwd);
+  const uselessConfig: string[] = checkUselessConfig(cwd);
+  const reWriteConfig: [] = checkReWriteConfig(cwd);
   const willChangeCount = willRemovePackage.length + uselessConfig.length + reWriteConfig.length;
   console.log('reWriteConfig==', willRemovePackage, reWriteConfig, uselessConfig)
 
