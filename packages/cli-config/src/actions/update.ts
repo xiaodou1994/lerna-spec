@@ -38,7 +38,7 @@ export default async (install = true) => {
     const npm = await npmType;
     const latestVersion = await checkLatestVersion();
     checking.stop();
-    
+
     if (latestVersion && install) {
       const update = ora(`[${PKG_NAME}] 存在新版本，将升级至 ${latestVersion}`);
 
@@ -55,6 +55,6 @@ export default async (install = true) => {
       log.info(`当前没有可用的更新`);
     }
   } catch (e) {
-    // 
+    //
   }
-}
+};

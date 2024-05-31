@@ -3,5 +3,8 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-require-imports': 0,
     'no-console': 0
+  },
+  parserOptions: {
+    project: "[tsconfig.json]",
   }
 }

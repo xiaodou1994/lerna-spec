@@ -12,6 +12,7 @@ import update from './actions/update';
 import log from './utils/log';
 import printReport from './utils/print-report';
 import npmType from './utils/npm-type';
+import { getCommitFiles, getAmendFiles } from './utils/git';
 import generateTemplate from './utils/generate-template';
 import { PKG_NAME, PKG_VERSION } from './utils/constants';
 
@@ -53,7 +54,7 @@ program
     } else {
       await init({
         cwd,
-        checkVersionUpdate: false,
+        checkVersionUpdate: true,
       });
     }
   });
@@ -105,6 +106,58 @@ program
     if (result.status !== 0) {
       process.exit(result.status);
     }
+  });
+
+program
+  .command('commit-file-scan')
+  .description('代码提交检查: git commit 时对提交代码进行规范问题扫描')
+  .option('-s, --strict', '严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口')
+  .action(async (cmd) => {
+    await installDepsIfThereNo();
+
+    // git add 检查
+    const files = await getAmendFiles();
+    if (files) log.warn(`[${PKG_NAME}] changes not staged for commit: \n${files}\n`);
+
+    const checking = ora();
+    checking.start(`执行 ${PKG_NAME} 代码提交检查`);
+
+    const { results, errorCount, warningCount } = await scan({
+      cwd,
+      include: cwd,
+      quiet: !cmd.strict,
+      files: await getCommitFiles(),
+    });
+
+    if (errorCount > 0 || (cmd.strict && warningCount > 0)) {
+      checking.fail();
+      printReport(results, false);
+      process.exitCode = 1;
+    } else {
+      checking.succeed();
+    }
+  });
+
+program
+  .command('fix')
+  .description('一键修复：自动修复项目的代码规范扫描问题')
+  .option('-i, --include <dirpath>', '指定要进行修复扫描的目录')
+  .option('--no-ignore', '忽略 eslint 的 ignore 配置文件和 ignore 规则')
+  .action(async (cmd) => {
+    await installDepsIfThereNo();
+
+    const checking = ora();
+    checking.start(`执行 ${PKG_NAME} 代码修复`);
+
+    const { results } = await scan({
+      cwd,
+      fix: true,
+      include: cmd.include || cwd,
+      ignore: cmd.ignore, // 对应 --no-ignore
+    });
+
+    checking.succeed();
+    if (results.length > 0) printReport(results, true);
   });
 
 program
