@@ -1,6 +1,6 @@
 {
   "name": "spec-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "编码规范化标准脚手架",
   "keywords": [
     "lint",
